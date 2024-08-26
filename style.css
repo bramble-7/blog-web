@@ -6,11 +6,17 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
   font-size: 26px;
-
   text-transform: uppercase;
   font-style: italic;
 }
@@ -80,4 +86,33 @@ This will select p elements inside of footer elements */
 }
 .related {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+li:first-child {
+  font-weight: bold;
+  /* color: #ff0000; */
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(odd) {
+  color: #ff0000;
+} */
+article p:first-child {
+  color: red;
 }
