@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="style.css" rel="stylesheet" />
     <title>The basic Language of the Web: HTML</title>
   </head>
   <body>
@@ -25,7 +25,11 @@
           height="50"
           width="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 27th 2024.</p>
+        <!-- ID Selectors-->
+        <!-- We can use ID name only once!!! -->
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 27th 2024.
+        </p>
         <img
           src="/img/post-img.jpg"
           alt="HTML code on a screen"
@@ -35,7 +39,7 @@
       </header>
       <p>
         All modern websites and web development are built using three
-        <em>fundamentals</em> technologies: HTML,CSS and JavaScript. These are
+        <em>fundamental</em> technologies: HTML,CSS and JavaScript. These are
         the languages of the web.
       </p>
       <p>
@@ -86,8 +90,8 @@
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
     <aside>
-      <p><strong>Related posts</strong></p>
-      <ul>
+      <h4><strong>Related Posts</strong></h4>
+      <ul class="related">
         <li>
           <img
             src="/img/related-1.jpg"
@@ -96,7 +100,9 @@
             height="75"
           />
           <a href="#" target="_blank">How to Learn Web development</a>
-          <p>By Aashivi</p>
+          <!-- Class selector  -->
+          <!-- We can use Class as per our choice -->
+          <p class="related-author">By Aashivi</p>
         </li>
         <li>
           <img
@@ -106,7 +112,7 @@
             height="75"
           />
           <a href="#" target="_blank">The unknown Powers of CSS</a>
-          <p>By Shashwat</p>
+          <p class="related-author">By Shashwat</p>
         </li>
         <li>
           <img
@@ -116,12 +122,13 @@
             height="75"
           />
           <a href="#" target="_blank">Why JavaScript is Awesome</a>
-          <p>By Pari Maheswari</p>
+          <p class="related-author">By Darshit Singh</p>
         </li>
       </ul>
     </aside>
     <footer>
-      <p>Copyright &copy; 2024 by The Code Magazine</p>
+      <!-- ID Selectors -->
+      <p id="copyright">Copyright &copy; 2024 by The Code Magazine</p>
     </footer>
   </body>
 </html>
