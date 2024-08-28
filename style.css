@@ -27,7 +27,6 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 .post-header {
@@ -37,7 +36,14 @@ body {
 
 nav {
   font-size: 18px;
-  margin-top: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+nav a:link {
+  margin: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 article {
@@ -48,7 +54,6 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px;
   width: 500px;
 }
 
@@ -127,6 +132,7 @@ article p:first-child {
 /* Unvisited links */
 a:link {
   color: #1098ad;
+  text-decoration: none;
 }
 /* visited link */
 a:visited {
