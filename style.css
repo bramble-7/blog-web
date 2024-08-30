@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Page Selections */
@@ -12,12 +13,10 @@ body {
   border-top: 10px solid #1098ad;
   position: relative;
 }
+
 .container {
-  width: 800px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  width: 1200px;
   margin: 0 auto;
-  /* position: relative; */
 }
 
 .main-header {
@@ -36,13 +35,12 @@ body {
 
 nav {
   font-size: 18px;
-  margin-top: 15px;
+  /* margin-top: 5px; */
   text-align: center;
-  float: right;
 }
 
 nav a:link {
-  margin: 10px 30px;
+  margin: 10px 10px;
   display: inline-block;
   text-decoration: none;
 }
@@ -55,7 +53,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* Combining Selectors */
@@ -79,7 +77,6 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
-  float: left;
 }
 
 h2 {
@@ -98,6 +95,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -143,6 +141,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: red;
+  font-weight: bold;
 }
 /* selected link */
 a:active {
@@ -173,6 +172,7 @@ This will select p elements inside of footer elements */
 }
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 .post-image {
@@ -223,8 +223,39 @@ h2::after {
 }
 
 .author {
-  /* padding-left: 80px; */
-  float: left;
   margin-top: 10px;
+  float: left;
   margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+/* CLEARNING FLOATS */
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
